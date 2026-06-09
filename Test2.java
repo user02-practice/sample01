@@ -1,41 +1,19 @@
+import java.time.LocalDate;
 public class Test2 {
-    static void main() {
-        int change = Integer.parseInt(IO.readln("おつり"));
-        IO.println("お釣りは" + change +"です");
+            static void main() {
+                int change = Integer.parseInt(IO.readln("おつり:"));
 
-        /**int a = 500;
-        int b = 100;
-        int c = 50 ;
-        int d = 10 ;
-        int e = 5;
-        int f = 1;**/
+                int a = 500, b = 100, c =50, d =10, e =5, f =1;
 
-        /**int a, b, c, d, e, f ;
+                IO.println("お釣りは" + change +"円です");
+                IO.println("500円 × " + change / a +"枚");
+                IO.println("100円 × " + change % a / b +"枚");
+                IO.println("50円 × " + change % a % b / c +"枚");
+                IO.println("10円 × " + change % a % b % c / d +"枚");
+                IO.println("5円 × " + change % a % b % c % d / e +"枚");
+                IO.println("1円 × " + change % a % b % c % d % e / f +"枚");
 
-        a = 500;
-        b = 100;
-        c = 50;
-        d = 10;
-        e = 5;
-        f = 1;**/
+               }
+        }
 
-        int a = 500, b = 100, c =50, d =10, e =5, f =1;
 
-        //IO.println(change % a % b % c % d % e % f );
-
-        IO.println("500×" + change / a );
-        IO.println("100×" + change % a / b);
-        IO.println("50×" + change % a % b / c);
-        IO.println("10×" + change % a % b % c / d);
-        IO.println("5×" + change % a % b % c % d / e);
-        IO.println("1×" + change % a % b % c % d % e / f);
-
-        /**IO.println(change / a );
-        IO.println(change / b );
-        IO.println(change / c );
-        IO.println(change / d );
-        IO.println(change / e );
-        IO.println(change / f );**/
-
-    }
-}
